@@ -12,6 +12,10 @@ $CMD "sed -i.bak 's/ACDOCROOT/$UPSTREAM_ACE_NAME/' sites/default/settings.php"
 $CMD "sed -i.bak 's/LOCALDBNAME/$LOCALDBNAME/' sites/default/settings.local.php"
 $CMD "rm sites/default/*.bak"
 
+# Remove .gitignore which can make deploying to Acquia Cloud confusing
+$CMD "rm profiles/df/.gitignore"
+
+
 # Set up composer the way Drupal likes it
 $CMD "php profiles/df/modules/contrib/composer_manager/scripts/init.php"
 $CMD "composer drupal-update"
