@@ -4,6 +4,8 @@ api: 2
 projects:
   drupal:
     version: "8.0.5"
+    patch:
+      - "https://www.drupal.org/files/issues/core-behat-mink-runtimeexception-2682003-3.patch"
   purge:
     version: "3.x-dev"
   purge_queuer_url:
