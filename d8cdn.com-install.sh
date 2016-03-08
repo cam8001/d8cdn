@@ -23,4 +23,4 @@ $CMD "composer drupal-update"
 # @todo - detect installed drush versions
 $CMD drush8 si -vy df
 $CMD drush8 es -vy dfs_tec
-$CMD drush8 en -y purge purge_ui purge_drush purge_queuer_url akamai
+$CMD drush8 en -y purge purge_ui purge_drush purge_queuer_url akamai devel web_profiler
